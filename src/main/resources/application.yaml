@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring: 
+  application:
+    name: basic-login-api
+  datasource:
+    url: jdbc:mysql://172.17.0.2:3306/usuarios
+    username: ${USERNAME}
+    password: ${PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
